@@ -99,13 +99,10 @@
 		F60393F027134B1800A79DFF /* pastegram */ = {
 			isa = PBXGroup;
 			children = (
-				F60393F127134B1800A79DFF /* AppDelegate.swift */,
-				F60393F327134B1800A79DFF /* SceneDelegate.swift */,
+				F603942227134CDC00A79DFF /* assets */,
+				F603942127134CC100A79DFF /* support */,
 				F60393F527134B1800A79DFF /* ViewController.swift */,
 				F60393F727134B1800A79DFF /* Main.storyboard */,
-				F60393FA27134B1900A79DFF /* Assets.xcassets */,
-				F60393FC27134B1900A79DFF /* LaunchScreen.storyboard */,
-				F60393FF27134B1900A79DFF /* Info.plist */,
 			);
 			path = pastegram;
 			sourceTree = "<group>";
@@ -126,6 +123,25 @@
 				F603941527134B1900A79DFF /* Info.plist */,
 			);
 			path = pastegramUITests;
+			sourceTree = "<group>";
+		};
+		F603942127134CC100A79DFF /* support */ = {
+			isa = PBXGroup;
+			children = (
+				F60393FF27134B1900A79DFF /* Info.plist */,
+				F60393FC27134B1900A79DFF /* LaunchScreen.storyboard */,
+				F60393F327134B1800A79DFF /* SceneDelegate.swift */,
+				F60393F127134B1800A79DFF /* AppDelegate.swift */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		F603942227134CDC00A79DFF /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				F60393FA27134B1900A79DFF /* Assets.xcassets */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,7 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = pastegram/Info.plist;
+				INFOPLIST_FILE = pastegram/support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = pastegram/Info.plist;
+				INFOPLIST_FILE = pastegram/support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
