@@ -8,6 +8,7 @@
 import UIKit
 import AlamofireImage
 import Parse
+import MBProgressHUD
 
 class CameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
 
@@ -30,9 +31,10 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let imageData = pictureView.image!.pngData()
         let file = PFFileObject(name:"image.png", data: imageData! )
         post["image"] = file
-        
+        MBProgressHUD.showAdded(to: self.view, animated: true)//load the animation
         post.saveInBackground { (success,error) in
             if success {
+                MBProgressHUD.hide(for: self.view, animated: true)
                 self.dismiss(animated: true, completion: nil )
             }else{
                 print("eroro" )

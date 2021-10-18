@@ -9,6 +9,6 @@ target 'pastegram' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'Parse'
-
+  pod 'MBProgressHUD'
 
 end
