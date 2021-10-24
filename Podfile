@@ -10,5 +10,5 @@ target 'pastegram' do
   pod 'AlamofireImage'
   pod 'Parse'
   pod 'MBProgressHUD'
-
+  pod 'MessageInputBar'
 end
