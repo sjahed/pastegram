@@ -48,8 +48,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.allowsEditing = true
         
         if UIImagePickerController.isSourceTypeAvailable(.camera){
-            picker.sourceType = .camera
-        }else {
+            picker.sourceType = .camera         }else {
             picker.sourceType = .photoLibrary
         }
         
